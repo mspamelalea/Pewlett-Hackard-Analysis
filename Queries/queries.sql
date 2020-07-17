@@ -160,3 +160,27 @@ ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no)
 where d.dept_name in ('Sales', 'Development');
+
+--Find duplicate rows
+select emp_no,  count(*)  
+from titles 
+group by emp_no
+having count(*) >1;
+
+-- Partition the data to show only most recent title per employee
+SELECT tmp.emp_no,
+ tmp.title,
+ tmp.from_date,
+ tmp.to_date
+--INTO current_title
+FROM
+ (SELECT emp_no,
+ title,
+ from_date,
+ to_date,
+ ROW_NUMBER() OVER
+ (PARTITION BY (emp_no)
+ ORDER BY to_date DESC) rn
+ FROM titles
+ ) tmp WHERE rn = 1
+ORDER BY emp_no;
