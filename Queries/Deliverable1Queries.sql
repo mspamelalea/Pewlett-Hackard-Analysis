@@ -8,7 +8,7 @@ SELECT e.emp_no,
 	e.first_name,
 	e.last_name,
 	s.salary,
-	de.to_date
+	ti.to_date
 	,ti.title
 INTO ret_empl_by_title
 FROM employees as e
