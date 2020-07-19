@@ -14,17 +14,18 @@ Using six csv files provided, build a relational database that contains employee
 
 Data Sources:
 
-employees.csv - all current and former employees
-departments.csv - departments in the company
-dept_emp.csv - employee's department history
-dept_manager.csv - list of department's manager history
-salaries.csv -  most recent salary for employees
-titles.csv - employees title history
+- employees.csv - all current and former employees
+- departments.csv - departments in the company
+- dept_emp.csv - employee's department history
+- dept_manager.csv - list of department's manager history
+- salaries.csv -  most recent salary for employees
+- titles.csv - employees title history
 
 Software: 
-Postgres database
-PgAdmin editor
-QuickDBD erd builder
+
+- Postgres database
+- PgAdmin editor
+- QuickDBD erd builder
 
 ### Results
 
@@ -34,7 +35,7 @@ The following ERD (entity relationship diagram) depicts the six main tables crea
 ![](EmployeeDB_small.PNG)
 
 There are 33,118 current employees eligible for retirement. Alist of these employess can be viewed in the file Data/retiring_employees.csv.
-This is that total broken down by title:
+This picture is that total broken down by title:
 
 
 ![](title_count.PNG)
