@@ -24,14 +24,19 @@ titles.csv - employees title history
 Software: 
 Postgres database
 PgAdmin editor
+QuickDBD erd builder
 
 ### Results
 
 The following ERD (entity relationship diagram) depicts the six main tables created and their relationships to one another.
-![](EmployeeDB.PNG)
+
+
+![](EmployeeDB_small.PNG)
 
 There are 33,118 current employees eligible for retirement. Alist of these employess can be viewed in the file Data/retiring_employees.csv.
 This is that total broken down by title:
+
+
 ![](title_count.PNG)
 
 There are 1,549 current employees eligible to participate in the mentorship program.
